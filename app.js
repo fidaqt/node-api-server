@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const ActiveDirectory = require('activedirectory2');
-const hostname = 'localhost';
 const port = 2255;
 const app = express();
 
@@ -45,6 +44,6 @@ app.post('/login', async (req, res) => {
     // res.status(200).send(true);
 });
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });

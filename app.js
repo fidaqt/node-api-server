@@ -45,5 +45,5 @@ app.post('/login', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Server running at ${port}`);
 });
